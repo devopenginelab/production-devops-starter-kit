@@ -1,0 +1,22 @@
+# Operating System & IDE junk
+.DS_Store
+.vscode/
+.idea/
+
+# Environment variables & secrets (CRITICAL SECURITY)
+.env
+.env.*
+!.env.example
+
+# Terraform state files & local caches (CRITICAL SECURITY)
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+terraform.tfstate.d/
+
+# Application build artifacts & dependencies
+target/
+node_modules/
+dist/
+build/
